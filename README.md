@@ -1,4 +1,6 @@
-# TreeSkills
+# Tree Skills
+
+The demo version of this application can be seen from the link - https://shimanskayaelena.github.io/tree-skills/
 
 Test
 There is an object of a tree structure with an arbitrary nesting: https://goo.gl/hd9xME. You need to write code that takes this object to the input and nicely renders it in HTML with the nesting preserved. When you click on an arbitrary element from a tree in HTML, its subtree should be hidden and expanded.
