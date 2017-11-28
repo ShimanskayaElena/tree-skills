@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let item of skills" (click)="toggle(item, $event)">
+    {{item.name}}
+    <app-child *ngIf="item.name===selectSkill" [skills]="item.skills"></app-child>
+  </li>
+</ul>

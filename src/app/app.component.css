@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    color: #787fa0;
+}
+
+div {
+    background-color: #c1c5d6;
+    width: 40%;
+    padding: 1%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    div {
+        width: 70%;
+        margin: 0 15%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        width: 90%;
+        margin: 0 5%;
+    }
+}

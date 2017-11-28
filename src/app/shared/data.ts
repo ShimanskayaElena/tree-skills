@@ -1,0 +1,101 @@
+interface SkillsInterface {
+    name: string;
+    skills?: Array<SkillsInterface>;
+}
+
+export class Skills implements SkillsInterface {
+    constructor(
+        public name: string,
+        public skills?: Skills[]
+    ) {}
+}
+
+export const data: Skills[] = [{
+    name: "Frontend",
+    skills: [
+      {
+        name: "HTML & CSS",
+        skills: [
+          {
+            name: "Understanding block, inline and table models"
+          },
+          {
+            name: "Stylesheets",
+            skills: [
+              {
+                name: "Positioning",
+                skills: [
+                  {
+                    name: "static, relative and absolute, fixed, sticky"
+                  }
+                ]
+              },
+              {
+                name: "Understanding of box model"
+              },
+              {
+                name: "Understanding floating"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: "JavaScript",
+        skills: [
+          {
+            name: "Core",
+            skills: [
+              {
+                name: "DOM"
+              },
+              {
+                name: "Events"
+              },
+              {
+                name: "Data structures",
+                skills: [
+                  {
+                    name: "Primitives and limitations"
+                  },
+                  {
+                    name: "Object"
+                  }
+                ]
+              },
+            ]
+          },
+          {
+            name: "Approaches",
+            skills: [
+              {
+                name: "OOP",
+                skills: [
+                  {
+                    name: "class"
+                  },
+                  {
+                    name: "Prototypes"
+                  }
+                ]
+              },
+              {
+                name: "Asynchronous programming"
+              }
+            ]
+          },
+          {
+            name: "Frameworks & libraries",
+            skills: [
+              {
+                name: "React"
+              },
+              {
+                name: "jQuery"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+}];
